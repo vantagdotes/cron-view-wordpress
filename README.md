@@ -10,7 +10,7 @@ Simple tool to view background activities in WordPress quickly and easily. The p
 
 ## Installation
 
-1. Download the ZIP file from this repository.
+1. Download the ZIP file from this repository. [Download here](https://github.com/josejtax/cron-view-wordpress/archive/refs/heads/main.zip)
 
 2. Go to your WordPress admin panel.
 
