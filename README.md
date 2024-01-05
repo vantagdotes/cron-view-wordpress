@@ -30,7 +30,7 @@ Simple tool to view background activities in WordPress quickly and easily. The p
 
 ## Support
 
-If you need support or have any questions about this plugin, you can contact me through my email [hola@jmfernandez.dev.](mailto:hola@jmfernandez.dev).
+If you need support or have any questions about this plugin, you can contact me through my email [jose@jtax.dev](mailto:jose@jtax.dev).
 
 ## Contributions
 
