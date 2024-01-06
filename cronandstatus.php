@@ -4,8 +4,8 @@
 * Plugin URI: https://github.com/josejtax/cron-view-wordpress
 * Description: Wordpress cron viewer.
 * Version: 0.1
-* Author: Jose Manuel Fernández
-* Author URI: mailto:hola@jmfernandez.dev
+* Author: jtax.dev
+* Author URI: https://jtax.dev
 */
 
 defined('ABSPATH') or die('You shouldnt be here...');
