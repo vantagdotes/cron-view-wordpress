@@ -26,13 +26,15 @@ function plugin_cron_jtax() {
     $cron_jobs = get_option( 'cron' );
     $cron_count = 0;
     
+    wp_enqueue_style( 'plugin-cron-styles', plugins_url( 'assets/style.css', __FILE__ ) );
+
     echo '<div>';
     echo '<h1>Process in background</h1>';
     
     if (empty($cron_jobs)) {
         echo '<p>There are no tasks in the cron.</p>';
     } else {
-        echo '<p>List of tasks:</p>';
+        echo '<h2>List of tasks:</h2>';
         echo '<table>';
         echo '<thead>';
         echo '<tr>';
@@ -50,9 +52,22 @@ function plugin_cron_jtax() {
                         foreach ( $scheduled as $key => $args ) {
                             echo '<tr>';
                             echo '<td>' . $hook . '</td>';
-                            echo '<td>' . ( wp_next_scheduled( $hook ) ? 'Active' : 'Disable' ) . '</td>';
-                            echo '<td>' . date( 'Y-m-d H:i:s', $timestamp ) . '</td>';
-                            echo '<td>' . date( 'Y-m-d H:i:s', wp_next_scheduled( $hook ) ) . '</td>';
+                            echo '<td>';
+                                if ( wp_next_scheduled( $hook ) ) {
+                                    echo 'Active';
+                                } else {
+                                    echo 'Disable';
+                                }
+                            echo '</td>';
+                            echo '<td>' . date( 'Y-m-d // H:i', $timestamp ) . '</td>';
+                            echo '<td>';
+                                if ( wp_next_scheduled( $hook ) == date( 'Y-m-d H:i:s', $timestamp )) {
+                                    date( 'Y-m-d H:i', $timestamp );
+                                } else {
+                                    echo 'no next tasks';
+                                }
+                            echo '</td>';
+
                             echo '</tr>';
                             $cron_count++;
                         }
