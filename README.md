@@ -1,13 +1,14 @@
 === List of Background Activities in WordPress ===
-Contributors: josejtax
-Donate link: [Buy me a coffee](https://www.buymeacoffee.com/josejtax)
-Tags: cron, scheduled tasks, background activities
-Requires at least: 4.0
-Tested up to: 6.4.3
-Stable tag: 1.0.0
-Requires PHP: 7.0
-License: GPLv3 or later
-License URI: https://www.gnu.org/licenses/gpl-3.0.html
+
+* Contributors: josejtax
+* Donate link: [Buy me a coffee](https://www.buymeacoffee.com/josejtax)
+* Tags: cron, scheduled tasks, background activities
+* Requires at least: 4.0
+* Tested up to: 6.4.3
+* Stable tag: 1.0.0
+* Requires PHP: 7.0
+* License: GPLv3 or later
+* License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
 == Description ==
 
