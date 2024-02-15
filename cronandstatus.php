@@ -28,7 +28,7 @@ function jtax_plugin_cron_jtax() {
     $cron_jobs = get_option( 'cron' );
     $cron_count = 0;
     
-    wp_enqueue_style( 'jtax-plugin-cron-styles', plugins_url( 'assets/style.css', __FILE__ ) );
+    wp_enqueue_style( 'jtax-plugin-cron-styles', plugins_url( 'assets/style.css', __FILE__ ), array(), '1.0.0' );
 
     echo '<div>';
     echo '<h1>Process in background</h1>';
@@ -53,7 +53,7 @@ function jtax_plugin_cron_jtax() {
                     if (is_array($scheduled)) {
                         foreach ( $scheduled as $key => $args ) {
                             echo '<tr>';
-                            echo '<td>' . esc_html( $hook ) . '</td>'; // Escapar la variable $hook
+                            echo '<td>' . esc_html( $hook ) . '</td>';
                             echo '<td>';
                                 if ( wp_next_scheduled( $hook ) ) {
                                     echo esc_html__( 'Active', 'jtax-plugin' );
@@ -61,10 +61,10 @@ function jtax_plugin_cron_jtax() {
                                     echo esc_html__( 'Disabled', 'jtax-plugin' );
                                 }
                             echo '</td>';
-                            echo '<td>' . esc_html( date( 'Y-m-d // H:i', $timestamp ) ) . '</td>'; // Escapar la salida de date()
+                            echo '<td>' . esc_html( gmdate( 'Y-m-d // H:i', $timestamp ) ) . '</td>';
                             echo '<td>';
-                                if ( wp_next_scheduled( $hook ) == date( 'Y-m-d H:i:s', $timestamp )) {
-                                    echo esc_html( date( 'Y-m-d H:i', $timestamp ) );
+                                if ( wp_next_scheduled( $hook ) == gmdate( 'Y-m-d H:i:s', $timestamp )) {
+                                    echo esc_html( gmdate( 'Y-m-d H:i', $timestamp ) );
                                 } else {
                                     echo esc_html__( 'No next tasks', 'jtax-plugin' );
                                 }
@@ -79,7 +79,8 @@ function jtax_plugin_cron_jtax() {
         }
         echo '</tbody>';
         echo '</table>';
-        echo '<p>' . sprintf( esc_html__( 'Programmed tasks: %d', 'jtax-plugin' ), $cron_count ) . '</p>'; // Escapar la variable $cron_count
+        // Translators: Placeholder %s is for the number of cron jobs.
+        echo '<p>' . esc_html( sprintf( esc_html__( 'Programmed tasks: %s', 'jtax-plugin' ), $cron_count ) ) . '</p>';
     }
     
     echo '</div>';
