@@ -47,9 +47,11 @@ This plugin is licensed under the GNU General Public License (GPL) v3.0 or later
 == Changelog ==
 
 = 1.0.0 =
+
 * Initial release.
 
 == Upgrade Notice ==
 
 = 1.0.0 =
-This is the initial release of the plugin. Enjoy monitoring your scheduled tasks!
+
+* This is the initial release of the plugin. Enjoy monitoring your scheduled tasks!
