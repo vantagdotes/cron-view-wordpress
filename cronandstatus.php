@@ -6,27 +6,29 @@
 * Version: 1.0.0
 * Author: jtax.dev
 * Author URI: https://jtax.dev
+* License: GPLv3 or later
+* License URI: https://www.gnu.org/licenses/gpl-3.0.html
 */
 
 defined('ABSPATH') or die('You shouldnt be here...');
 
-function cron_page() {
+function jtax_plugin_display_cron_tasks() {
     add_submenu_page(
         'tools.php',
         'Cron wordpress',
         'Cron wordpress',
         'manage_options',
         'ver_cron',
-        'plugin_cron_jtax'
+        'jtax_plugin_cron_jtax'
     );
 }
-add_action('admin_menu', 'cron_page');
+add_action('admin_menu', 'jtax_plugin_display_cron_tasks');
 
-function plugin_cron_jtax() {
+function jtax_plugin_cron_jtax() {
     $cron_jobs = get_option( 'cron' );
     $cron_count = 0;
     
-    wp_enqueue_style( 'plugin-cron-styles', plugins_url( 'assets/style.css', __FILE__ ) );
+    wp_enqueue_style( 'jtax-plugin-cron-styles', plugins_url( 'assets/style.css', __FILE__ ) );
 
     echo '<div>';
     echo '<h1>Process in background</h1>';
@@ -51,20 +53,20 @@ function plugin_cron_jtax() {
                     if (is_array($scheduled)) {
                         foreach ( $scheduled as $key => $args ) {
                             echo '<tr>';
-                            echo '<td>' . $hook . '</td>';
+                            echo '<td>' . esc_html( $hook ) . '</td>'; // Escapar la variable $hook
                             echo '<td>';
                                 if ( wp_next_scheduled( $hook ) ) {
-                                    echo 'Active';
+                                    echo esc_html__( 'Active', 'jtax-plugin' );
                                 } else {
-                                    echo 'Disable';
+                                    echo esc_html__( 'Disabled', 'jtax-plugin' );
                                 }
                             echo '</td>';
-                            echo '<td>' . date( 'Y-m-d // H:i', $timestamp ) . '</td>';
+                            echo '<td>' . esc_html( date( 'Y-m-d // H:i', $timestamp ) ) . '</td>'; // Escapar la salida de date()
                             echo '<td>';
                                 if ( wp_next_scheduled( $hook ) == date( 'Y-m-d H:i:s', $timestamp )) {
-                                    date( 'Y-m-d H:i', $timestamp );
+                                    echo esc_html( date( 'Y-m-d H:i', $timestamp ) );
                                 } else {
-                                    echo 'no next tasks';
+                                    echo esc_html__( 'No next tasks', 'jtax-plugin' );
                                 }
                             echo '</td>';
 
@@ -77,7 +79,7 @@ function plugin_cron_jtax() {
         }
         echo '</tbody>';
         echo '</table>';
-        echo '<p>Programmed tasks: ' . $cron_count . '</p>';
+        echo '<p>' . sprintf( esc_html__( 'Programmed tasks: %d', 'jtax-plugin' ), $cron_count ) . '</p>'; // Escapar la variable $cron_count
     }
     
     echo '</div>';

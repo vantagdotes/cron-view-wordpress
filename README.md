@@ -1,14 +1,14 @@
 === List of Background Activities in WordPress ===
 
-* Contributors: josejtax
-* Donate link: [Buy me a coffee](https://www.buymeacoffee.com/josejtax)
-* Tags: cron, scheduled tasks, background activities
-* Requires at least: 4.0
-* Tested up to: 6.4.3
-* Stable tag: 1.0.0
-* Requires PHP: 7.0
-* License: GPLv3 or later
-* License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Contributors: josejtax
+Donate link: [Buy me a coffee](https://www.buymeacoffee.com/josejtax)
+Tags: cron, scheduled tasks, background activities
+Requires at least: 4.0
+Tested up to: 6.4.3
+Stable tag: 1.0.0
+Requires PHP: 7.0
+License: GPLv3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
 == Description ==
 
@@ -16,7 +16,7 @@ List of Background Activities in WordPress is a simple tool to view background a
 
 == Installation ==
 
-1. Download the ZIP file from this repository. [Download here](https://github.com/josejtax/cron-view-wordpress/archive/refs/heads/main.zip)
+1. Download the ZIP file from the [repository](https://github.com/josejtax/cron-view-wordpress/archive/refs/heads/main.zip).
 2. Go to your WordPress admin panel.
 3. Navigate to the Plugins section and select "Add New."
 4. Click on the "Upload Plugin" button and select the downloaded ZIP file.
@@ -24,13 +24,14 @@ List of Background Activities in WordPress is a simple tool to view background a
 
 == Usage ==
 
-1. Once the plugin is activated, go to "Tools > Cron WordPress" in the WordPress administration panel.
-2. You will see a list of the tasks scheduled in the WordPress Cron, including their name, status, last run, and next run.
-3. You can use this list to manage and monitor background activities on your WordPress site.
+Once the plugin is activated, go to "Tools > Cron WordPress" in the WordPress administration panel.
+You will see a list of the tasks scheduled in the WordPress Cron, including their name, status, last run, and next run.
+You can use this list to manage and monitor background activities on your WordPress site.
 
 == Frequently Asked Questions ==
 
-= How do I monitor scheduled tasks with this plugin? =
+= How do I monitor scheduled tasks with this plugin? = 
+
 Once the plugin is activated, go to "Tools > Cron WordPress" in the WordPress administration panel. You will see a list of the tasks scheduled in the WordPress Cron, including their name, status, last run, and next run. You can use this list to manage and monitor background activities on your WordPress site.
 
 == Support ==
@@ -43,7 +44,7 @@ If you want to contribute to this plugin, you are welcome to do so via [reposito
 
 == License ==
 
-This plugin is licensed under the GNU General Public License (GPL) v3.0 or later. You can find a copy of the license at https://www.gnu.org/licenses/gpl-3.0.html.
+This plugin is licensed under the GNU General Public License (GPL) v3.0 or later. You can find a copy of the license [here](https://www.gnu.org/licenses/gpl-3.0.html).
 
 == Changelog ==
 
@@ -55,4 +56,4 @@ This plugin is licensed under the GNU General Public License (GPL) v3.0 or later
 
 = 1.0.0 =
 
-* This is the initial release of the plugin. Enjoy monitoring your scheduled tasks!
+This is the initial release of the plugin. Enjoy monitoring your scheduled tasks!
