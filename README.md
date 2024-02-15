@@ -1,4 +1,4 @@
-=== List of Background Activities in WordPress ===
+=== List of Background Activities ===
 
 Contributors: josejtax
 Donate link: [Buy me a coffee](https://www.buymeacoffee.com/josejtax)
@@ -13,6 +13,10 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.html
 == Description ==
 
 List of Background Activities in WordPress is a simple tool to view background activities in WordPress quickly and easily. The plugin displays a list of scheduled tasks in the WordPress Cron, including their status (active or inactive), last execution, and next execution. You can use this plugin to monitor and manage scheduled tasks on your WordPress site.
+
+== Short Description ==
+
+List of Background Activities in WordPress allows you to easily monitor and manage scheduled tasks in WordPress Cron.
 
 == Installation ==
 
