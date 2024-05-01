@@ -1,10 +1,10 @@
 <?php
 /*
 * Plugin Name: Cron jobs and status
-* Plugin URI: https://github.com/josejtax/cron-view-wordpress
+* Plugin URI: https://github.com/jt4x/cron-view-wordpress
 * Description: Wordpress cron viewer.
 * Version: 1.0.0
-* Author: jtax.dev
+* Author: Jose Manuel 'jtax'
 * Author URI: https://jtax.dev
 * License: GPLv3 or later
 * License URI: https://www.gnu.org/licenses/gpl-3.0.html
