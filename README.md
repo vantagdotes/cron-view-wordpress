@@ -1,7 +1,6 @@
 === List of Background Activities ===
 
 Contributors: josejtax
-Donate link: [Buy me a coffee](https://www.buymeacoffee.com/josejtax)
 Tags: cron, scheduled tasks, background activities
 Requires at least: 4.0
 Tested up to: 6.4.3
