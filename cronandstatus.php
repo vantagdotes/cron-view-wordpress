@@ -1,7 +1,7 @@
 <?php
 /*
 * Plugin Name: Cron jobs and status
-* Plugin URI: https://github.com/jt4x/cron-view-wordpress
+* Plugin URI: https://github.com/josejtax/cron-view-wordpress
 * Description: Wordpress cron viewer.
 * Version: 1.0.0
 * Author: Jose Manuel 'jtax'
