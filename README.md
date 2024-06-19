@@ -19,7 +19,7 @@ List of Background Activities in WordPress allows you to easily monitor and mana
 
 == Installation ==
 
-1. Download the ZIP file from the [repository](https://github.com/jt4x/cron-view-wordpress/archive/refs/heads/main.zip).
+1. Download the ZIP file from the [repository](https://github.com/vantagdotes/cron-view-wordpress/archive/refs/heads/main.zip).
 2. Go to your WordPress admin panel.
 3. Navigate to the Plugins section and select "Add New."
 4. Click on the "Upload Plugin" button and select the downloaded ZIP file.
@@ -39,11 +39,11 @@ Once the plugin is activated, go to "Tools > Cron WordPress" in the WordPress ad
 
 == Support ==
 
-If you need support or have any questions about this plugin, you can contact me through my email [jose@jtax.dev](mailto:jose@jtax.dev).
+If you need support or have any questions about this plugin, you can contact me through my email [hey@vantag.es](mailto:hey@vantag.es).
 
 == Contributions ==
 
-If you want to contribute to this plugin, you are welcome to do so via [repository](https://github.com/jt4x/cron-view-wordpress).
+If you want to contribute to this plugin, you are welcome to do so via [repository](https://github.com/vantagdotes/cron-view-wordpress).
 
 == License ==
 
