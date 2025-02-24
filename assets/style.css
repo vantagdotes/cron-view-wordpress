@@ -1,8 +1,46 @@
-td {
-    border-right: 1px solid #000;
-    padding: 10px 40px;
+.jtax-controls {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-td:last-child {
-    border-right: none;
+#cron-refresh-status {
+    font-size: 12px;
+    color: #666;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+.status-active { color: #2ecc71; }
+.status-inactive { color: #e74c3c; }
+
+.cron-action-form {
+    display: inline;
+}
+
+.cron-action-form button {
+    margin-right: 5px;
+}
+
+.jtax-footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
