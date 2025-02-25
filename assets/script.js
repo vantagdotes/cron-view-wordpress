@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
     let refreshInterval;
-    
+
     function refreshCronTable() {
         $.ajax({
             url: jtaxCron.ajax_url,
@@ -30,7 +30,6 @@ jQuery(document).ready(function($) {
         clearInterval(refreshInterval);
     }
 
-    // Control de auto-refresh
     $('#jtax-pause-refresh').on('change', function() {
         if ($(this).is(':checked')) {
             startRefresh();
@@ -40,7 +39,6 @@ jQuery(document).ready(function($) {
         }
     });
 
-    // Forzar ejecución de cron
     $('#jtax-force-run').on('click', function() {
         $.ajax({
             url: jtaxCron.ajax_url,
@@ -55,14 +53,28 @@ jQuery(document).ready(function($) {
         });
     });
 
-    // Confirmación para eliminar
     $(document).on('click', '.delete-btn', function(e) {
         if (!confirm('Are you sure you want to delete this cron job?')) {
             e.preventDefault();
         }
     });
 
-    // Inicio
+    // Manejo de pestañas
+    $('.jtax-tab-button').on('click', function() {
+        $('.jtax-tab-button').removeClass('active');
+        $(this).addClass('active');
+
+        var tab = $(this).data('tab');
+        $('.jtax-tab-content').hide();
+        $('[data-tab="' + tab + '"]').show();
+
+        if (tab === 'wordpress' && $('#jtax-pause-refresh').is(':checked')) {
+            startRefresh();
+        } else {
+            stopRefresh();
+        }
+    });
+
     startRefresh();
     refreshCronTable();
 });
