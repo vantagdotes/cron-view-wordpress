@@ -1,63 +1,77 @@
 .jtax-controls {
-  margin: 10px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+	margin: 10px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
+
 #cron-refresh-status {
-  font-size: 12px;
-  color: #666;
+	font-size: 12px;
+	color: #666;
 }
+
 table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px 0;
+	width: 100%;
+	border-collapse: collapse;
+	margin: 20px 0;
 }
+
 th,
 td {
-  padding: 10px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
+	padding: 10px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
 }
+
 th {
-  background-color: #f5f5f5;
-  font-weight: bold;
+	background-color: #f5f5f5;
+	font-weight: bold;
 }
+
 .status-active {
-  color: #2ecc71;
+	color: #2ecc71;
 }
+
 .status-inactive {
-  color: #e74c3c;
+	color: #e74c3c;
 }
+
 .cron-action-form {
-  display: inline;
+	display: inline;
 }
+
 .cron-action-form button {
-  margin-right: 5px;
+	margin-right: 5px;
 }
+
 .jtax-footer {
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
+
 .jtax-tabs {
-  margin: 20px 0;
+	margin: 20px 0;
 }
+
 .jtax-tab-button {
-  padding: 10px 20px;
-  margin-right: 5px;
-  background: #f1f1f1;
-  border: none;
-  cursor: pointer;
+	padding: 10px 20px;
+	margin-right: 5px;
+	background: #f1f1f1;
+	border: none;
+	cursor: pointer;
 }
+
 .jtax-tab-button.active {
-  background: #0073aa;
-  color: white;
+	background: #0073aa;
+	color: white;
 }
+
 .jtax-tab-content {
-  margin-top: 10px;
+	margin-top: 10px;
 }
+
 .server-cron td code {
-  word-break: break-all;
+	word-break: break-all;
 }
